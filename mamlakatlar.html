@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Mamlakatlar</title>
+</head>
+<body>
+
+<h2>Mamlakatlar</h2>
+
+<h3>📏 7 va undan ko‘p harfli:</h3>
+<ul>
+    {% for m in kop %}
+        <li>{{ m }} ({{ m|length }})</li>
+    {% endfor %}
+</ul>
+
+<h3>📉 7 dan kam harfli:</h3>
+<ul>
+    {% for m in kam %}
+        <li>{{ m }} ({{ m|length }})</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
